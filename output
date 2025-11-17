@@ -1,0 +1,24 @@
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00012s latency).
+Not shown: 988 filtered ports
+
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Windows 10 SMB
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5357/tcp  open  wsdapi
+
+UDP 137   open  netbios-ns
+UDP 138   open  netbios-dgm
+UDP 1900  open  upnp
+
+OS Detection:
+Windows 10 Pro (64-bit) – accuracy 96%
+
+NSE Script Results (Safe Only):
+- smb2-time: system time response received
+- rdp-ntlm-info: RDP service detected
+- upnp-info: device responded with SSDP metadata
+
+Scan completed successfully.
